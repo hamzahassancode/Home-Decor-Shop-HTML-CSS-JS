@@ -1,0 +1,569 @@
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+
+
+*{
+    font-family: 'Droid Arabic Kufi', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+}
+
+:root{
+     --primary-color: #ffffff;
+    --secondary-color: #e7a957; 
+    }
+    .dark-theme{
+        
+     --primary-color: #dfdfdf;
+     --secondary-color: #5f5f5f; 
+     background-color: black;
+     color:#fafafa;
+
+    }
+header {
+    background-color:var(--secondary-color);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    font-family: 'Droid Arabic Kufi',serif;
+
+
+}
+
+   
+.logo{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.8em;
+    padding-left: 70PX;
+}
+
+.navigation {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+    transition: 0.7s ease;
+    justify-content: space-between;
+    gap: 60px;
+    
+}
+.navigation a{
+    color:var(--primary-color);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+    transition: 0.7s ease;
+    justify-content: space-between;
+    gap: 60px;
+    
+}
+
+.navigation a:hover{
+    color: #c70000;
+}
+/* <!-- -------------------------------------------------------------------------- --> */
+.hamburger{
+    color:#ffffff;
+    font-size: 1.5rem;
+    display: none;
+    cursor: pointer;
+    }
+#sunmoon{
+    right: 100px;
+    flex: 1;
+    color: var(--primary-color);
+    width: 30px;
+    cursor: pointer;
+    
+
+}
+
+#sun :hover{
+    color:white;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition:all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    color: var(--primary-color);
+    cursor: pointer;
+    }
+    .nav-menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 60px;
+        }
+        
+.nav-link{
+    transition: 0.75 ease;
+    }
+    .nav-link:hover{
+    color:red;
+    }
+    .navbar{
+        min-height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 24px;
+        }
+
+    li{
+        list-style: none;
+    }
+     nav ul li  {
+    
+        
+        display:inline;
+    
+        
+    }
+    nav ul ul{
+        display: none;
+    
+    }
+    nav ul li:hover > ul {
+        display: flex;
+        flex-direction: column;
+    }
+/* <!-- -------------------------------------------------------------------------- --> */
+section {
+    padding: 100px 200px;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(images/beauty-1679399078916-765.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.main h2 {
+    color: var(--primary-color);
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.backgrountextcolor{
+    border-radius: 15px;
+
+    background-color: hsla(0, 0%, 100%, 0.2);
+}
+.main h2 span {
+    display: inline-block;
+    margin-top: 10px;
+    color:var(--secondary-color);
+    font-size: 3em;
+    font-weight: 600;
+
+    
+}
+
+.main h3 {
+    color: var(--primary-color);
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+.main-btn {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+    
+}
+
+
+.main-btn:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.1);
+}
+
+.social-icons a {
+    color: var(--primary-color);
+    font-size: 1.7em;
+    padding-right: 30px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: var(--secondary-color);
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: var(--primary-color);
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card .icon {
+    color: var(--secondary-color);
+    font-size: 8em;
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3{
+    color: var(--secondary-color);
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+.info p{    color: var(--secondary-color);
+}
+.projects {
+    background-color: var(--secondary-color);
+}
+
+.projects .content{
+    margin-top: 30px;
+}
+
+.project-card {
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+.project-card:hover {
+   transform: scale(1.1);
+}
+
+.project-card:hover .project-image {
+    opacity: 0.9;
+ }
+
+.project-image img{
+    width: 100%
+}
+
+.project-info {
+    padding: 1em;
+}
+
+
+.project-category {
+    font-size: 0.8em;
+    color: #000;
+}
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+.project-title {
+    color: #000;
+}
+.more-details {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.more-details:hover {
+    color: #601cfc;
+}
+/* #contact{
+    background-color:var(--primary-color) ;
+} */
+.contact .icon{
+    font-size: 4.5em;
+}
+
+.contact .info h3 {
+    color: var(--secondary-color);
+}
+
+.contact .info p {
+    font-size: 1.5em;
+}
+
+.footer {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.footer-title span {
+    color: var(--secondary-color);
+}
+
+.footer .social-icons a{
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
+}
+/* <!-- -------------------------------------------------------------------------- --> */
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: var(--primary-color);
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: var(--primary-color);
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+@media(max-width:768px){
+    .hamburger{
+    display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position:fixed;
+        Left: 100%;
+        top: 70px;
+        gap: 0;
+        fLex-direction: column;
+        background-color:white ;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        
+    }
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .nav-menu.active{
+        Left: 0;
+        }   
+    }
+/* <!-- -------------------------------------------------------------------------- --> */
+@media (max-width:641px){
+    .hamburger{
+        display: block;
+        }
+    body{
+        font-size: 12px;
+    }
+
+    .main-content h2{
+        font-size: 0.8em;
+    }
+
+    .main-content h3{
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width:300px){
+    .hamburger{
+        display: block;
+        }
+    body{
+        font-size: 10px;
+     
+    }
+}
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+    /* The actual popup (appears on top) */
+.popup .popuptext {
+    visibility: hidden;
+        width: 300px;
+        background-color: var(--secondary-color);
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 8px 0;
+        position: absolute;
+        margin-left: 80px;
+        font-size: 1.5rem;
+    }
+
+        /* Popup arrow */
+.popup .popuptext::after {
+            content: "";
+            top: 100%;
+            left: 100%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: var(--secondary-color);
+        }
+
+    /* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+        visibility: visible;
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s
+    }
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
